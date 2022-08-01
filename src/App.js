@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Questionbank from './Questionbank';
+import NavBar from './NavBar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <NavBar/>
+      <div className='instruct'>
+       <h3>Instructions of quiz</h3>
+       <ul>
+        <li>Only one Change to attempt one question</li>
+        <li>Plus one for each Correct and minus one for each wrong</li>
+        <li>All the best</li>
+       </ul>
+      </div>
+      <Questionbank/>
     </div>
   );
 }
